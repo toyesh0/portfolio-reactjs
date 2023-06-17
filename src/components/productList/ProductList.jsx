@@ -5,18 +5,18 @@ import { products } from "../../data"
 const ProductList = () => {
   return (
     <div className="pl">
-        <div className="pl-texts">
-            <h1 className="pl-title">Create & Inspire. It's Toyesh</h1>
-            <p className="pl-desc">
-                Toyesh is a creative portfolio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget consequat purus. Nullam eget est felis. Quisque interdum lacus sed risus feugiat, vel iaculis velit commodo. Proin ac mi arcu
+      <div className="pl-texts">
+        <h1 className="pl-title">Projects</h1>
+        <p className="pl-desc">
+          Explore a collection of inspiring projects that showcase my passion for web development and innovative technologies. Each project represents a unique opportunity to learn, grow, and push the boundaries of what is possible. Join me on this journey of creativity and discovery as we bring ideas to life through code.
+        </p>
 
-            </p>
-        </div>
-        <div className="pl-list">
-        {products.map(item=>(
-          <Product key={item.id} img={item.img} link = {item.link}/>
+      </div>
+      <div className="pl-list">
+        {products.map(item => (
+          <Product key={item.id} img={item.img} link={item.link} />
         ))}
-        </div>
+      </div>
     </div>
   )
 }
